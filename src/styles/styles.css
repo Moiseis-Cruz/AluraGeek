@@ -9,3 +9,11 @@ header {
 header .title {
     color: var(--primary-color);
 }
+
+main {
+    background-color: var(--quartiary-color);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-block: 100px;
+}
