@@ -86,4 +86,13 @@ main form {
 
 main form .title-form {
     background-color: brown;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+main form .form-control input {
+    font-size: 1.6rem;
+    padding: 10px 14px;
+    border: 3px solid black;
+    border-radius: 30px;
 }
