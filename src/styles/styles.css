@@ -96,3 +96,9 @@ main form .form-control input {
     border: 3px solid black;
     border-radius: 30px;
 }
+
+form .button-container {
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+}
