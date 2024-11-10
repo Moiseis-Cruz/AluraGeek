@@ -5,6 +5,10 @@
     outline: none;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     max-width: 1440px;
     font-family: "Press Start 2P", system-ui;
