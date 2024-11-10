@@ -73,3 +73,17 @@ main .product-container .product-list {
     justify-content: space-between;
     align-items: center;
 }
+
+main form {
+    background-color: burlywood;
+    width: 100%;
+    max-width: 472px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+main form .title-form {
+    background-color: brown;
+}
