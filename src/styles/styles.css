@@ -41,7 +41,7 @@ main .product-container .product-list {
 }
 
 .product-list li .product-card {
-    background-color: brown;
+    background-color: grey;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -51,6 +51,8 @@ main .product-container .product-list {
     padding: 10px;
     border-radius: 10px;
     border: 3px solid black;
+    font-family: "Sarpanch", sans-serif;
+    color: white;
 }
 
 .product-card .card-image {
@@ -61,7 +63,13 @@ main .product-container .product-list {
 }
 
 .product-card .product-name {
-    background-color: rebeccapurple;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.product-card div {
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
