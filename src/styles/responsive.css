@@ -1,11 +1,5 @@
 @media (max-width: 768px) {
     main {
-        /* background-color: var(--primary-color);
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-evenly;
-        padding-block: 110px; */
-
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
@@ -14,19 +8,6 @@
     }
 
     main .product-container .product-list {
-        /* width: 100%;
-        max-width: 678px;
-        height: 917px;
-        padding: 25px;
-        overflow-y: scroll;
-        box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px;
-        margin-top: 40px;
-        align-items: start; */
-
         padding: 10px;
         gap: 5px;
     }
