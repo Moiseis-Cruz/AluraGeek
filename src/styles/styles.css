@@ -41,7 +41,6 @@ main .product-container .product-list {
 }
 
 .product-list li .product-card {
-    background-color: grey;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -68,14 +67,12 @@ main .product-container .product-list {
 }
 
 .product-card div {
-    /* background-color: royalblue; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 main form {
-    background-color: burlywood;
     width: 100%;
     max-width: 472px;
     padding: 40px;
@@ -85,7 +82,6 @@ main form {
 }
 
 main form .title-form {
-    background-color: brown;
     font-size: 2.4rem;
     text-align: center;
 }
@@ -98,7 +94,14 @@ main form .form-control input {
 }
 
 form .button-container {
-    background-color: yellowgreen;
     display: flex;
     justify-content: space-between;
+    gap: 13px;
+}
+
+form .button-container button {
+    width: 100%;
+    height: 55px;
+    font-size: 2rem;
+    border-radius: 15px;
 }
