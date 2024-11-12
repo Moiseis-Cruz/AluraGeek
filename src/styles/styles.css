@@ -13,11 +13,11 @@ header .title {
 }
 
 main {
-    background-color: var(--quartiary-color);
+    background-color: var(--primary-color);
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding-block: 100px;
+    padding-block: 110px;
 }
 
 main .product-container .product-title {
@@ -37,6 +37,7 @@ main .product-container .product-list {
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 40px;
     /* align-items: center; */
 }
 
@@ -49,16 +50,17 @@ main .product-container .product-list {
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid var(--secundary-color);
     font-family: "Sarpanch", sans-serif;
-    color: white;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
 
 .product-card .card-image {
     /* width: 176px; */
     height: 174px;
     border-radius: 5px;
-    border: 3px solid black;
+    border: 3px solid var(--secundary-color);
 }
 
 .product-card .product-name {
@@ -89,8 +91,13 @@ main form .title-form {
 main form .form-control input {
     font-size: 1.6rem;
     padding: 10px 14px;
-    border: 3px solid black;
+    border: 3px solid var(--quartiary-color);
     border-radius: 30px;
+    color: var(--quartiary-color);
+}
+
+main form .form-control input::placeholder {
+    color: var(--quartiary-color);
 }
 
 form .button-container {
@@ -104,6 +111,17 @@ form .button-container button {
     height: 55px;
     font-size: 2rem;
     border-radius: 15px;
+}
+
+form .button-container button:first-child {
+    background-color: var(--quartiary-color);
+    color: var(--primary-color);
+}
+
+form .button-container button:nth-child(2) {
+    background-color: var(--primary-color);
+    border: 3px solid var(--quartiary-color);
+    color: var(--quartiary-color);
 }
 
 footer {
