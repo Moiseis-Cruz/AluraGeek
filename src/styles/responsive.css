@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    main {
+        /* background-color: var(--primary-color);
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-block: 110px; */
+
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 58px;
+        padding: 33px 0 59px;
+    }
+}
