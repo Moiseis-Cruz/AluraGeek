@@ -1,0 +1,28 @@
+{
+    "card":[
+        {
+            "id": 1,
+            "image": "./src/images/storm-trooper-chaveiro.jpg",
+            "name": "Stormtrooper",
+            "price": 60
+        },
+        {
+            "id": 2,
+            "image": "./src/images/mini-game.png",
+            "name": "Game Boy Classic",
+            "price": 60
+        },
+        {
+            "id": 3,
+            "image": "./src/images/storm-trooper-chaveiro.jpg",
+            "name": "Stormtrooper",
+            "price": 60
+        },
+        {
+            "id": 4,
+            "image": "./src/images/mini-game.png",
+            "name": "Game Boy Classic",
+            "price": 60
+        }
+    ]
+}
