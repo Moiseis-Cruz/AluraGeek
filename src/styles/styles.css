@@ -32,7 +32,7 @@ main .product-container .product-list {
     height: 917px;
     padding: 25px;
     overflow-y: scroll;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -109,6 +109,7 @@ form .button-container button {
     height: 55px;
     font-size: 2rem;
     border-radius: 15px;
+    transition: 0.6s ease-in-out;
 }
 
 form .button-container button:first-child {
@@ -116,11 +117,30 @@ form .button-container button:first-child {
     color: var(--primary-color);
 }
 
+form .button-container button:first-child:hover{
+    background-color: var(--primary-color);
+    color: var(--quartiary-color);
+}
+
+form .button-container button:first-child:active{
+    opacity: 0.5;
+}
+
 form .button-container button:nth-child(2) {
     background-color: var(--primary-color);
     border: 3px solid var(--quartiary-color);
     color: var(--quartiary-color);
 }
+
+form .button-container button:nth-child(2):hover {
+    background-color: var(--quartiary-color);
+    color: var(--primary-color);
+}
+
+form .button-container button:nth-child(2):active {
+    opacity: 0.8;
+}
+
 
 footer {
     background-color: var(--tertiary-color);
