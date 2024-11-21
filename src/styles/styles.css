@@ -27,21 +27,20 @@ main .product-container .product-title {
 }
 
 main .product-container .product-list {
+    display: flex;
+    place-content: flex-start center;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 678px;
     height: 917px;
     padding: 25px;
     overflow-y: scroll;
     box-shadow: -2px 2px 3px 3px rgba(0, 0, 0, 0.15);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
     margin-top: 40px;
-    align-items: start;
 }
 
-.product-list li .product-card {
+.product-list .product-card {
     display: flex;
     flex-direction: column;
     width: 196px;
@@ -124,6 +123,7 @@ form .button-container button:first-child:hover{
 
 form .button-container button:first-child:active{
     opacity: 0.5;
+    background-color: rgb(170, 170, 170);
 }
 
 form .button-container button:nth-child(2) {
