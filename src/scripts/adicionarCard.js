@@ -1,15 +1,30 @@
 import { serviceApi } from "./serviceApi.js";
 
-const formCards = document.querySelector("[data-form]");
+const addCardBtn = document.getElementById("add-card-button");
+const name = document.getElementById("name");
+const image = document.getElementById("image");
+const price = document.getElementById("price");
 
 async function criarVideo(evento){
-    const name = document.getElementById("name").value;
-    const image = document.getElementById("image").value;
-    const price = document.getElementById("price").value;
-
-    await serviceApi.adicionarCard(image, name, price);
-
     evento.preventDefault();
+
+    const nameValue = name.value;
+    const imageValue = image.value;
+    const priceValue = price.value;
+
+    await serviceApi.adicionarCard(imageValue, nameValue, priceValue);
 };
 
-formCards.addEventListener("submit", evento => criarVideo(evento));
+addCardBtn.addEventListener("click", evento => criarVideo(evento));
+
+const clearBtn = document.getElementById("clear-button");
+
+function limparCampo(evento){
+    evento.preventDefault();
+
+    name.value = "";
+    image.value = "";
+    price.value = "";
+}
+
+clearBtn.addEventListener("click", evento => limparCampo(evento));
