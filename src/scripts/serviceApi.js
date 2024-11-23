@@ -17,8 +17,8 @@ async function adicionarCard(image, name, price){
         })
     });
     const datas = await response.json();
-    return datas
-}
+    return datas;
+};
 
 export const serviceApi = {
     listaCards,

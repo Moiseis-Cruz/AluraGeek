@@ -15,11 +15,11 @@ function constroiCard(image, name, price){
         </li>`
 
     return card;
-    };
+};
 
 async function gerarCards() {
     const listaApi = await serviceApi.listaCards();
-    listaApi.forEach(elemento => lista.appendChild(constroiCard(elemento.image, elemento.name, elemento.price)))
-}
+    listaApi.forEach(elemento => lista.appendChild(constroiCard(elemento.image, elemento.name, elemento.price)));
+};
 
-gerarCards()
+gerarCards();
