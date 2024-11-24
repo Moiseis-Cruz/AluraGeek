@@ -18,6 +18,7 @@ main {
     align-items: flex-start;
     justify-content: space-evenly;
     padding-block: 110px;
+    color: var(--secundary-color);
 }
 
 main .product-container .product-title {
@@ -94,11 +95,11 @@ main form .form-control input {
     padding: 10px 14px;
     border: 3px solid var(--quartiary-color);
     border-radius: 30px;
-    color: var(--quartiary-color);
+    color: var(--secundary-color);
 }
 
 main form .form-control input::placeholder {
-    color: var(--quartiary-color);
+    color: var(--secundary-color);
 }
 
 form .button-container {
