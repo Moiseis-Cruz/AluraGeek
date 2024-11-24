@@ -8,9 +8,14 @@ const price = document.getElementById("price");
 async function criarVideo(evento){
     evento.preventDefault();
 
-    const nameValue = name.value;
-    const imageValue = image.value;
-    const priceValue = price.value;
+    const nameValue = name.value.trim();
+    const imageValue = image.value.trim();
+    const priceValue = price.value.trim();
+
+    if(nameValue === "" || imageValue === "" || priceValue === ""){
+        alert(`Preencha todos os campos, por favor!`);
+        return;
+    };
 
     await serviceApi.adicionarCard(imageValue, nameValue, priceValue);
 };
