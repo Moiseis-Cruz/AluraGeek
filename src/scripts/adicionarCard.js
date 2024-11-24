@@ -30,6 +30,6 @@ function limparCampo(evento){
     name.value = "";
     image.value = "";
     price.value = "";
-}
+};
 
 clearBtn.addEventListener("click", evento => limparCampo(evento));
