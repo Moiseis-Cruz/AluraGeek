@@ -20,7 +20,19 @@ async function adicionarCard(image, name, price){
     return datas;
 };
 
+async function deleteCard(id){
+    const response = await fetch(`http://localhost:3000/card/${id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-type": "application/json"
+        }
+    });
+    const data = await response.json();
+    return data;
+};
+
 export const serviceApi = {
     listaCards,
-    adicionarCard
+    adicionarCard,
+    deleteCard
 };

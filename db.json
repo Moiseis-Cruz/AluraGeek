@@ -1,12 +1,6 @@
 {
   "card": [
     {
-      "id": 1,
-      "image": "./src/images/storm-trooper-chaveiro.jpg",
-      "name": "Stormtrooper",
-      "price": 60
-    },
-    {
       "id": 2,
       "image": "./src/images/mini-game.png",
       "name": "Game Boy Classic",
@@ -29,6 +23,12 @@
       "name": "Leo Ikki Armadura Dourada",
       "price": "149,90",
       "id": 5
+    },
+    {
+      "image": "https://cdn.awsli.com.br/600x700/84/84034/produto/287894408/sub-zero-b-1--800-chdec5lykf.jpg",
+      "name": "Mortal Kombat Sub-Zero Funko Pop ",
+      "price": "179,91",
+      "id": 6
     }
   ]
 }
