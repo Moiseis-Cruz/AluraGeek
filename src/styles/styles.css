@@ -68,12 +68,21 @@ main .product-container .product-list {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    padding-bottom: 20px;
 }
 
 .product-card div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.product-card .delete-product-button {
+    background-color: rgb(246, 246, 246);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--secundary-color);
 }
 
 main form {
