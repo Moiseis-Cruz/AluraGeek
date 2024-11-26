@@ -15,6 +15,10 @@ Até então, nunca tinha trabalhado com os métodos ``POST`` e ``DELETE``.
 
 Para o método POST, além de criar a função assícrona para consumi-la, também precisei editar mais algumas configurções. Como por exemplo, o método que iremos consumir, especificamos no ``headers`` o tipo de arquivo que está sendo enviado e no ``body`` adicionamos os dados que queremos cadastrar na requisição.
 
+<br>
+
+Já função assícrona para para excluir produtos, além de configurar o método ``DELETE``, e determinar o tipo de arquivo a ser excluído, foi necessário adicionar um parâmetro ``id`` para poder criar o evento de exclusão de cada card individualmente.
+
 ## ⌨️ Como Utilizar O Servidor Local
 
 1. Você precisa ter o **Node.js** instalado;
