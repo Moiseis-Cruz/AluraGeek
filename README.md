@@ -1,14 +1,19 @@
 # AluraGeek
 
-Este é o meu projeto desenvolvido no desafio da Alura.
+Este é o meu projeto desenvolvido no desafio da Alura de FrontEnd.
 O principal objetivo dele foi criar um ``Mokup`` para simular um API <i>fake</i> e poder cosumi-la utilizando métodos distintos, que foram os métodos ``GET``, ``POST`` e ``DELETE``.
 <br>
 
 Neste projeto, você pode adicionar novos itens a lista. Para isso, basta preencher todos o campos do formulário para adicionar um novo card. No formulário você só precisa adicionar o nome do produto, o preço e a url da imagem.
+<br>
+
+Você também pode excluir cada card individualmente ao clicar no botão que cada item possui no canto inferior direito do próprio card. 
 
 ## Principais Desafios
 
 Até então, nunca tinha trabalhado com os métodos ``POST`` e ``DELETE``.
+
+Para o método POST, além de criar a função assícrona para consumi-la, também precisei editar mais algumas configurções. Como por exemplo, o método que iremos consumir, especificamos no ``headers`` o tipo de arquivo que está sendo enviado e no ``body`` adicionamos os dados que queremos cadastrar na requisição.
 
 ## ⌨️ Como Utilizar O Servidor Local
 
