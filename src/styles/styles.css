@@ -10,6 +10,10 @@ header .title {
     color: var(--primary-color);
     font-weight: 400;
     font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 main {
@@ -169,6 +173,10 @@ footer {
 
 footer .subtitle-footer {
     font-size: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 footer p {
