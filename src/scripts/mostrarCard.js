@@ -1,41 +1,27 @@
-import { serviceApi } from "./serviceApi.js";
+// mostrarCard.js
 
+import { serviceApi } from "./serviceApi.js";
+import { mostrarMensagemVazia } from "./teste.js";
+import { constroiCard } from "./domManipulation.js";
+
+// Seleção do elemento da lista
 const lista = document.querySelector("[data-lista]");
 
-function constroiCard(id, image, name, price){
-    const card = document.createElement("li");
-    card.innerHTML = `  
-        <li class="product-card">
-            <img class="card-image" src="${image}" alt="">
-            <h3 class="product-name">${name}</h3>
-            <div>
-                <p class="product-price">$ ${price}</p>
-                <button class="delete-product-button" data-id="${id}">🗑️</button>
-            </div>
-        </li>`;
-
-        const deleteButton = card.querySelector(".delete-product-button");
-    deleteButton.addEventListener("click", async () => {
-        await serviceApi.deleteCard(id);
-        card.remove();
-    });
-    return card;
-};
-
+// Função para gerar cards na lista
 async function gerarCards() {
     const listaApi = await serviceApi.listaCards();
-
+    
+    // Limpa a lista antes de adicionar novos cards
     lista.innerHTML = ''; 
 
     if (listaApi.length === 0) {
-        const mensagemVazia = document.createElement("h1");
-        mensagemVazia.textContent = "A lista está vazia";
-        lista.appendChild(mensagemVazia);
+        mostrarMensagemVazia(lista); // Exibe mensagem se a lista estiver vazia
     } else {
         listaApi.forEach(elemento => {
             lista.appendChild(constroiCard(elemento.id, elemento.image, elemento.name, elemento.price));
         });
-    };
-};
+    }
+}
 
+// Gera os cards ao carregar o script
 gerarCards();
