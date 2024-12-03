@@ -1,6 +1,5 @@
 import { serviceApi } from "./serviceApi.js";
 
-// Função para construir um card
 export function constroiCard(id, image, name, price) {
     const card = document.createElement("li");
     
@@ -14,16 +13,14 @@ export function constroiCard(id, image, name, price) {
             </div>
         </li>`;
 
-    // Adiciona o evento de clique ao botão de excluir
     card.querySelector(".delete-product-button").addEventListener("click", async () => {
         await serviceApi.deleteCard(id);
         card.remove();
-        
-        // Verifica se a lista está vazia após a exclusão (opcional)
+
         if (document.querySelector("[data-lista]").children.length === 0) {
-            mostrarMensagemVazia(); // Exibe mensagem se a lista estiver vazia (se implementado)
+            mostrarMensagemVazia();
         }
     });
 
     return card;
-}
+};

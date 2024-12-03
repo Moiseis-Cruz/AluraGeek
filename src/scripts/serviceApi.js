@@ -1,6 +1,3 @@
-// serviceApi.js
-
-// Função para listar todos os cards
 async function listaCards() {
     const response = await fetch(`http://localhost:3000/card`);
     
@@ -11,7 +8,6 @@ async function listaCards() {
     return response.json();
 }
 
-// Função para adicionar um novo card
 async function adicionarCard(image, name, price) {
     const response = await fetch(`http://localhost:3000/card`, {
         method: "POST",
@@ -26,9 +22,8 @@ async function adicionarCard(image, name, price) {
     }
 
     return response.json();
-}
+};
 
-// Função para excluir um card pelo ID
 async function deleteCard(id) {
     const response = await fetch(`http://localhost:3000/card/${id}`, {
         method: "DELETE",
@@ -42,9 +37,8 @@ async function deleteCard(id) {
     }
 
     return response.json();
-}
+};
 
-// Exporta as funções do serviço API como um objeto
 export const serviceApi = {
     listaCards,
     adicionarCard,
