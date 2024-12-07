@@ -4,7 +4,7 @@
     box-sizing: border-box;
     outline: none;
     scrollbar-width: thin;
-    scrollbar-color: var(--primary-color) var(--tertiary-color);
+    scrollbar-color: var(--secundary-color) var(--tertiary-color);
 }
 
 *::-webkit-scrollbar {
