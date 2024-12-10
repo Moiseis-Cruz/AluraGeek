@@ -1,21 +1,21 @@
 import { serviceApi } from "./serviceApi.js";
-import { mostrarMensagemVazia } from "./teste.js";
-import { constroiCard } from "./domManipulation.js";
+import { showEmptyMessage } from "./messages.js";
+import { buildCard } from "./domManipulation.js";
 
-const lista = document.querySelector("[data-lista]");
+const list = document.querySelector("[data-lista]");
 
-async function gerarCards() {
-    const listaApi = await serviceApi.listaCards();
+async function generateCards() {
+    const listApi = await serviceApi.cardsList();
     
-    lista.innerHTML = ''; 
+    list.innerHTML = ''; 
 
-    if (listaApi.length === 0) {
-        mostrarMensagemVazia(lista);
+    if (listApi.length === 0) {
+        showEmptyMessage(list);
     } else {
-        listaApi.forEach(elemento => {
-            lista.appendChild(constroiCard(elemento.id, elemento.image, elemento.name, elemento.price));
+        listApi.forEach(elemento => {
+            list.appendChild(buildCard(elemento.id, elemento.image, elemento.name, elemento.price));
         });
     };
 };
 
-gerarCards();
+generateCards();
