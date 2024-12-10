@@ -1,5 +1,5 @@
 import { serviceApi } from "./serviceApi.js";
-import { validarCampos } from "./validation.js";
+import { validateFields } from "./validation.js";
 
 const addCardBtn = document.getElementById("add-card-button");
 const nameInput = document.getElementById("name");
@@ -7,23 +7,23 @@ const imageInput = document.getElementById("image");
 const priceInput = document.getElementById("price");
 const clearBtn = document.getElementById("clear-button");
 
-async function criarVideo(evento) {
-    evento.preventDefault();
+async function createCard(event) {
+    event.preventDefault();
 
-    const valores = validarCampos(nameInput, imageInput, priceInput);
-    if (!valores) return;
+    const values = validateFields(nameInput, imageInput, priceInput);
+    if (!values) return;
 
-    const { nameValue, imageValue, priceValue } = valores;
+    const { nameValue, imageValue, priceValue } = values;
 
-    await serviceApi.adicionarCard(imageValue, nameValue, priceValue);
+    await serviceApi.addCard(imageValue, nameValue, priceValue);
 };
 
-function limparCampo(evento) {
-    evento.preventDefault();
+function clearField(event) {
+    event.preventDefault();
     nameInput.value = "";
     imageInput.value = "";
     priceInput.value = "";
 };
 
-addCardBtn.addEventListener("click", criarVideo);
-clearBtn.addEventListener("click", limparCampo);
+addCardBtn.addEventListener("click", createCard);
+clearBtn.addEventListener("click", clearField);
