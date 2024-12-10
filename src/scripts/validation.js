@@ -1,4 +1,4 @@
-import { exibirMensagemErro } from "./messages.js";
+import { displayErrorMessage } from "./messages.js";
 
 export function validateFields(nameInput, imageInput, priceInput) {
     const nameValue = nameInput.value.trim();
@@ -6,7 +6,7 @@ export function validateFields(nameInput, imageInput, priceInput) {
     const priceValue = priceInput.value.trim();
 
     if (!nameValue || !imageValue || !priceValue) {
-        exibirMensagemErro("Preencha todos os campos, por favor!");
+        displayErrorMessage("Preencha todos os campos, por favor!");
         return false;
     }
 

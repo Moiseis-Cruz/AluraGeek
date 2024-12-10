@@ -1,4 +1,4 @@
-export function exibirMensagemErro(message) {
+export function displayErrorMessage(message) {
     alert(message);
 };
 
