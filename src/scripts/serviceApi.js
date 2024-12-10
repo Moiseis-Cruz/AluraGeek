@@ -1,4 +1,4 @@
-async function listaCards() {
+async function cardsList() {
     const response = await fetch(`http://localhost:3000/card`);
     
     if (!response.ok) {
@@ -8,7 +8,7 @@ async function listaCards() {
     return response.json();
 }
 
-async function adicionarCard(image, name, price) {
+async function addCard(image, name, price) {
     const response = await fetch(`http://localhost:3000/card`, {
         method: "POST",
         headers: {
@@ -40,7 +40,7 @@ async function deleteCard(id) {
 };
 
 export const serviceApi = {
-    listaCards,
-    adicionarCard,
+    cardsList,
+    addCard,
     deleteCard,
 };
