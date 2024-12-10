@@ -1,6 +1,6 @@
 import { serviceApi } from "./serviceApi.js";
 
-export function constroiCard(id, image, name, price) {
+export function buildCard(id, image, name, price) {
     const card = document.createElement("li");
     
     card.innerHTML = `
@@ -18,7 +18,7 @@ export function constroiCard(id, image, name, price) {
         card.remove();
 
         if (document.querySelector("[data-lista]").children.length === 0) {
-            mostrarMensagemVazia();
+            showEmptyMessage();
         }
     });
 
