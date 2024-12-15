@@ -11,6 +11,7 @@ async function createCard(event) {
     event.preventDefault();
 
     const values = validateFields(nameInput, imageInput, priceInput);
+
     if (!values) return;
 
     const { nameValue, imageValue, priceValue } = values;
