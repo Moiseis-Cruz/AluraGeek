@@ -15,9 +15,13 @@ Até então, nunca tinha trabalhado com os métodos ``POST`` e ``DELETE``.
 
 Para o método POST, além de criar a função assícrona para consumi-la, também precisei editar mais algumas configurções. Como por exemplo, o método que iremos consumir, especificamos no ``headers`` o tipo de arquivo que está sendo enviado e no ``body`` adicionamos os dados que queremos cadastrar na requisição.
 
+<img src="./src/images/method-post.png">
+
 <br>
 
 Já função assícrona para para excluir produtos, além de configurar o método ``DELETE``, e determinar o tipo de arquivo a ser excluído, foi necessário adicionar um parâmetro ``id`` para poder criar o evento de exclusão de cada card individualmente.
+
+<img src="./src/images/method-delete.png">
 
 ## ⌨️ Como Utilizar O Servidor Local
 
@@ -59,4 +63,4 @@ Já função assícrona para para excluir produtos, além de configurar o métod
 * json-server;
 
 
-<img src="./src/images/mini-game.png" alt="" />
+<img src="./src/images/alurageek-02.gif" alt="" />
