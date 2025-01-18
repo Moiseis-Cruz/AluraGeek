@@ -7,7 +7,7 @@ O principal objetivo dele foi criar um `Mokup` para simular um API <i>fake</i> e
 Neste projeto, você pode adicionar novos itens a lista. Para isso, basta preencher todos o campos do formulário para adicionar um novo card. No formulário você só precisa adicionar o nome do produto, o preço e a url da imagem.
 <br>
 
-Você também pode excluir cada card individualmente ao clicar no botão que cada item possui no canto inferior direito do próprio card.
+Você também pode excluir cada card, individualmente, ao clicar no botão que cada item possui no canto inferior direito do próprio card.
 
 ## Principais Desafios
 
