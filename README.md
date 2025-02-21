@@ -1,6 +1,6 @@
 # AluraGeek
 
-Este é o meu projeto desenvolvido no desafio da Alura de FrontEnd.
+Este é o meu projeto desenvolvido no desafio da <b>Alura</b> em parceria com a <b>Oracle</b> de FrontEnd.
 O principal objetivo dele foi criar um `Mokup` para simular um API <i>fake</i> e poder cosumi-la utilizando métodos distintos, que foram os métodos `GET`, `POST` e `DELETE`.
 <br>
 
@@ -19,7 +19,7 @@ Para o método POST, além de criar a função assícrona para consumi-la, tamb�
 
 <br>
 
-Já função assícrona para para excluir produtos, além de configurar o método `DELETE`, e determinar o tipo de arquivo a ser excluído, foi necessário adicionar um parâmetro `id` para poder criar o evento de exclusão de cada card individualmente.
+Já a função assícrona para excluir produtos, além de configurar o método `DELETE`, e determinar o tipo de arquivo a ser excluído, foi necessário adicionar um parâmetro `id` para poder criar o evento de exclusão de cada card individualmente.
 
 <img src="./src/images/method-delete.png">
 
